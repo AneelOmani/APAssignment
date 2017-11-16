@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+          <hibernate-mapping package="com.javatpoint">
+          <class name="com.javatpoint.Employee" table="emp558">
+          <id name="id">
+          <generator class="assigned"></generator>
+          </id>
+          
+          <property name="name"></property>
+          <property name="salary"></property>
+          </class>
+          
+          <class name="com.javatpoint.AddMcqs" table="Mcqs">
+          <id name="id">
+          <generator class="assigned"></generator>
+          </id>
+          
+          <property name="Question"></property>
+          <property name="optionA"></property>
+          <property name="optionB"></property>
+          <property name="optionC"></property>
+          <property name="optionD"></property>
+          <property name="correct"></property>
+          </class>
+          
+          <class name="com.javatpoint.AddTFs" table="TrueFalse">
+          <id name="id">
+          <generator class="assigned"></generator>
+          </id>
+          
+          <property name="Question"></property>
+          <property name="optionA"></property>
+          <property name="optionB"></property>
+          <property name="correct"></property>
+          </class>
+          
+          <class name="com.javatpoint.Numeric" table="Numeral">
+          <id name="id">
+          <generator class="assigned"></generator>
+          </id>
+          
+          <property name="Question"></property>
+          <property name="optionA"></property>
+          <property name="correct"></property>
+          </class>
+          <class name="com.javatpoint.Student" table="student">
+          <id name="id">
+          <generator class="assigned"></generator>
+          </id>
+          
+          <property name="score"></property>
+          <property name="name"></property>
+          <property name="username"></property>
+           <property name="pwd"></property>
+          </class>
+          <class name="com.javatpoint.Teacher" table="Teacher">
+          <id name="id">
+          <generator class="assigned"></generator>
+          </id>
+          
+          <property name="name"></property>
+          <property name="username"></property>
+          <property name="pwd"></property>
+          </class>
+          </hibernate-mapping>
